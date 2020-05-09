@@ -46,6 +46,7 @@ validation_keyboard_dir = os.path.join(validation_dir, 'keyboard')
 validation_table_dir = os.path.join(validation_dir, 'table')
 validation_trout_dir = os.path.join(validation_dir, 'trout')
 
+
 #ağı oluşturma
 model=models.Sequential()
 model.add(layers.Conv2D(32, (3, 3), activation='relu', padding='same',
@@ -104,7 +105,7 @@ val_acc = history.history['val_acc']
 loss = history.history['loss']
 val_loss = history.history['val_loss']
 
-
+#veri zenginleştirme
 #train_datagen = ImageDataGenerator(
 #    rescale=1./255,
 #    rotation_range=40,
